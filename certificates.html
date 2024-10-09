@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9; /* Light background color */
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .documents {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            justify-content: space-around;
+        }
+        .document {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 48vb; /* Width for better viewing */
+            text-align: center;
+            background-color: white; /* White background for documents */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            justify-content: space-between; /* Space between content and title */
+            height: 46vh; /* Fixed height for uniformity */
+            align-items: center;
+        }
+        .document img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px; /* Space between image and title */
+        }
+        .pdf-viewer {
+            width: 100%; /* Full width */
+            height: auto; /* Adjust height automatically */
+            min-height: 41vh;
+            border: none; /* Remove border for a cleaner look */
+            background-color: white; /* White background to avoid black space */
+            margin-bottom: 10px; /* Space between PDF and title */
+        }
+        .title {
+            margin-top: auto; /* Push title to the bottom */
+            overflow: hidden;
+            text-overflow: ellipsis; /* Add ellipsis for overflow */
+            white-space: nowrap; /* Prevent line breaks */
+            width: 100%; /* Full width */
+        }
+        .title a {
+            color: black; /* Remove blue color */
+            text-decoration: none; /* Remove underline */
+        }
+        .title a:hover {
+            text-decoration: underline; /* Optional underline on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Certificates</h1>
+    <button class="button" onclick="location.href='index.html'">Back to Portfolio</button>
+
+    <div class="documents">
+        <!-- This section will be filled with JS -->
+    </div>
+
+    <script>
+        // List of document names 
+        const documents = [
+            'APSIS 2021_internship.pdf',
+            'IEEE membership.pdf',
+            'certi_GG_1465.pdf',
+            'The Joy Of Computing Using Python.pdf',
+            'Completion of course HTML.pdf',
+            'Completion of course CSS.pdf',
+            'Devtown bootcamp.pdf',
+            'Internship Data Science.pdf',
+            'jobaaj_data_analytics.jpg',
+            'Provisional Certificate.pdf',
+            'votar id.pdf',
+            'college id card.jpg',
+            // Add more documents here as needed
+        ];
+
+        const documentsDiv = document.querySelector('.documents');
+
+        documents.forEach(doc => {
+            const docDiv = document.createElement('div');
+            docDiv.classList.add('document');
+
+            // Determine the file type and display accordingly
+            if (doc.endsWith('.png') || doc.endsWith('.jpg')) {
+                docDiv.innerHTML = `<img src="assets/certificates/${doc}" alt="${doc}"><p class="title">${doc}</p>`;
+            } else if (doc.endsWith('.pdf')) {
+                // Use an iframe for the first page and an anchor for the link
+                docDiv.innerHTML = `
+                    <iframe src="assets/certificates/${doc}#page=1" class="pdf-viewer" allowfullscreen></iframe>
+                    <div class="title"><a href="assets/certificates/${doc}" target="_blank">${doc}</a></div>
+                `;
+            }
+
+            documentsDiv.appendChild(docDiv);
+        });
+    </script>
+
+</body>
+</html>
