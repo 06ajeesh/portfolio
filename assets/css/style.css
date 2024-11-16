@@ -1,6 +1,4 @@
-/**
-* Updated: Jan 29 2024 with Bootstrap v5.3.2
-*/
+
 
 /*--------------------------------------------------------------
 # General
@@ -105,7 +103,7 @@ h6 {
 #header .profile .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #212431;
+  background: #312431;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1249,11 +1247,55 @@ section {
 
 .project_gallery{
   margin: 40px 20px 20px 20px;
+  display: inline-block;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .project_gallery h2{
+  display: block;
   text-align: center;
   font-weight: 600;
   margin-bottom: 10px;
+}
+.project_item_silbakes{
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 30px;
+  max-width: 42%;
+  display: inline-flex; 
+}
+
+/* Media query for screen widths 1200px or smaller */
+@media (max-width: 1200px) {
+  .project_item_silbakes {
+    max-width: 43%;  
+  }
+}
+
+@media (max-width: 1000px) {
+  .project_item_silbakes {
+    max-width: 55%;  
+  }
+}
+
+@media (max-width: 800px) {
+  .project_item_silbakes {
+    max-width: 65%;  
+  }
+}
+
+/* Media query for screen widths 768px or smaller */
+@media (max-width: 600px) {
+  .project_item_silbakes {
+    max-width: 75%; 
+  }
+}
+
+.project_item_silbakes img{
+  margin: 3px 3px;
+  max-width: 99%;
+  height: auto;
 }
 
 .project_item{
