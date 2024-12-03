@@ -2,7 +2,7 @@
 
 **Welcome!**
 
-I'm Ajeesh P., a recent B.Tech ECE graduate from GEC Thrissur with a strong passion for software development. I possess proficiency in various programming languages and frameworks, including Flutter, Python, HTML, CSS, and JavaScript. This portfolio serves as a window into my projects, showcasing my technical skills and practical experience.
+I'm Ajeesh P., a recent B.Tech ECE graduate from GEC Thrissur with a strong passion for software development. I possess proficiency in various programming languages and frameworks, including Flutter, Python, SQL, HTML, CSS, and JavaScript. This portfolio serves as a window into my projects, showcasing my technical skills and practical experience.
 
 **About Me**
 
@@ -23,7 +23,7 @@ I'm Ajeesh P., a recent B.Tech ECE graduate from GEC Thrissur with a strong pass
 * **Programming Languages:** Python (Flask, Pandas, Numpy, Matplotlib,  Selenium, bs4 ), Flutter (Dart)
 * **Web Development:** HTML, CSS, JavaScript
 * **Microcontrollers:** Arduino UNO, 8051 Microcontroller
-* **Databases:** Firebase
+* **Databases:** Firebase, MySQL, Hive
 * **Version Control Systems:** Git
 * **Development Tools:** Android Studio, PyCharm, Arduino IDE, VS Code
 
