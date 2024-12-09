@@ -116,6 +116,11 @@ nav .nav-image {
 } 
 
 
+#home-img div a[title="github"] i{
+    color: #000000;
+    font-size: 3rem;
+}
+
 #home-img div a[title="linkedin"] i{
     color: #0077b5;
     font-size: 3rem;
