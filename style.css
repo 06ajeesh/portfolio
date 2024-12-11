@@ -214,6 +214,23 @@ nav .nav-image {
 }
 
 
+#about a[title="GitHub"] i{
+    color: #000000;
+    font-size: 2rem;
+}
+
+#about a[title="LinkedIn"] i{
+    color: #0077b5;
+    font-size: 2rem;
+}
+
+#about a[title="Instagram"] i{
+    color: #e4405f;
+    font-size: 2rem;
+}
+
+
+
 
 
 
