@@ -438,22 +438,7 @@ nav .nav-image {
     margin: 0 auto; /* Center the form */
   }
   
-  #contact .form-label {
-    font-weight: bold;
-    color: #0077b5; /* Accent color */
-  }
-  
-  #contact .form-control {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  #contact .form-control:focus {
-    border-color: #0077b5;
-    box-shadow: 0 0 5px rgba(0, 119, 181, 0.5);
-  }
+
   
   #contact button {
     background-color: #0077b5;
