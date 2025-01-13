@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@4.0.0/dist/fancybox.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            min-height: 100vh;
+        }
+
+        footer {
+            height: 20vh;
+        }
+
+        .skills {
+            background-color: #f8f9fa;
+            padding: 30px 0;
+        }
+
+        .project-description {
+            margin-bottom: 30px;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            border-radius: 25px;
+            padding: 10px 20px;
+        }
+
+        .just {
+            text-align: justify;
+            text-indent: 2rem;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="py-1"></div>
+    <!-- Hero Section -->
+    <section class="container">
+        <div class="row my-2 py-2 d-flex justify-content-center">
+
+            <div class="col-10 col-sm-7 col-md-5 d-flex justify-content-center align-items-center mb-3">
+                <img src="..\assets\projects\weather website\weather-bg.png" alt="img" class="w-100 rounded-5">
+            </div>
+
+            <div class="col-md-7 d-flex flex-column  align-items-center justify-content-center h-auto">
+                <h1 class="fw-bold mb-2 pb-2 d-flex text-justify">Weather Website</h1>
+
+                <div class="d-flex justify-content-center mt-2 pt-2 w-75">
+                    <table
+                        class="table table-borderless table-striped-columns table-hover caption-top table-responsive-md">
+                        <caption>Project info</caption>
+                        <tr>
+                            <th>Date</th>
+                            <td class="">01 Nov, 2022</td>
+                        </tr>
+
+                        <tr>
+                            <th>Project type</th>
+                            <td>Personal</td>
+                        </tr>
+
+                        <tr>
+                            <th>Language </th>
+                            <td>HTML, JS, rapid API</td>
+                        </tr>
+
+                        <tr class="table-active">
+                            <th>Project URL</th>
+                            <td>
+                                <a href="https://github.com/06ajeesh/Weather-Detailing-Website" target="_blank" rel="noopener"
+                                    class="link-primary text-decoration-none">
+                                    Click here
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <!-- Project Description Section -->
+    <section class="container project-description pt-3">
+        <h3 class="text-start mb-4">Project Description :</h3>
+        <p class="just p-0 m-0">The Weather Application is a simple yet functional web-based project built using HTML,
+            CSS, JavaScript, and the powerful Rapid API integration. This application allows users to easily access
+            real-time weather data for any city or geographic location around the world. Leveraging the API Ninjas
+            Weather API, the app retrieves the latest weather details, including temperature, humidity, wind speed, and
+            more, providing a comprehensive snapshot of the current conditions.
+
+            Using a combination of HTML for structure, CSS for styling, and JavaScript for dynamic interactions, the
+            Weather Application showcases the basic functionality of both front-end web development and API integration.
+            By incorporating the Bootstrap framework, the design is responsive and user-friendly, ensuring an optimal
+            experience across different devices.</p>
+        <p class="just">
+            For those interested in implementing this project on their own, a simple guide is provided: users can
+            subscribe to the Weather API via Rapid API, obtain their unique API key, and insert it into the JavaScript
+            file to start fetching live weather data. This project serves as an excellent starting point for
+            understanding API calls, front-end development, and how to work with third-party APIs to bring real-time
+            data to web applications.
+        </p>
+    </section>
+
+    <!-- Project Gallery Section -->
+    <section class="container py-5">
+        <h3 class="text-center mb-4">Project Gallery</h3>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-11 col-lg-8 my-2">
+                <a href="../assets/projects/weather website/weatherapp.png" data-fancybox="gallery" data-caption="block_diagram">
+                    <img src="../assets/projects/weather website/weatherapp.png" alt="Project Image" class="img-fluid rounded border p-3">
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center d-flex align-items-center justify-content-center bg-dark text-white">
+        <p>06ajeesh &copy; 2024. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and FancyBox -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@4.0.0/dist/fancybox.umd.js"></script>
+
+    <!--Fancy box initialisation  -->
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            loop: true,
+            captions: true,
+        });
+    </script>
+
+
+</body>
+
+</html>

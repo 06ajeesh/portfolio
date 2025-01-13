@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@4.0.0/dist/fancybox.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            min-height: 100vh;
+        }
+
+        footer {
+            height: 20vh;
+        }
+
+        .skills {
+            background-color: #f8f9fa;
+            padding: 30px 0;
+        }
+
+        .project-description {
+            margin-bottom: 30px;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            border-radius: 25px;
+            padding: 10px 20px;
+        }
+
+        .just {
+            text-align: justify;
+            text-indent: 2rem;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="py-1"></div>
+    <!-- Hero Section -->
+    <section class="container">
+        <div class="row my-2 py-2 d-flex justify-content-center">
+
+            <div class="col-10 col-sm-7 col-md-5 d-flex justify-content-center align-items-center mb-3">
+                <img src="../assets/projects/weather app/weather app bg.png" alt="img" class="w-100 rounded-5">
+            </div>
+
+            <div class="col-md-7 d-flex flex-column  align-items-center justify-content-center h-auto">
+                <h1 class="fw-bold mb-2 pb-2 d-flex text-justify h2">Weather app</h1>
+
+                <div class="d-flex justify-content-center mt-2 pt-2 w-75">
+                    <table
+                        class="table table-borderless table-striped-columns table-hover caption-top table-responsive-md">
+                        <caption>Project info</caption>
+                        <tr>
+                            <th>Date</th>
+                            <td class="">17 June, 2024</td>
+                        </tr>
+
+                        <tr>
+                            <th>Project type</th>
+                            <td>Personal</td>
+                        </tr>
+
+                        <tr>
+                            <th>Language </th>
+                            <td>Flutter - Dart</td>
+                        </tr>
+
+                        <tr class="table-active">
+                            <th>Project URL</th>
+                            <td>
+                                <a href="https://github.com/06ajeesh/Flutter_Basics/tree/weather-app-flutter"
+                                    target="_blank" rel="noopener" class="link-primary text-decoration-none">
+                                    Click here
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <!-- Project Description Section -->
+    <section class="container project-description pt-3">
+        <h3 class="text-start mb-4">Project Description :</h3>
+        <p class="just">
+            The Weather Application is a user-friendly mobile app built using Flutter that provides real-time weather
+            updates for any location worldwide. By integrating the OpenWeatherMap API, the app retrieves accurate and
+            up-to-date weather data, including temperature, weather description, humidity, feels-like temperature, and
+            wind speed.
+
+            With a clean and intuitive interface, the app allows users to quickly search for weather conditions in any
+            city or region, offering a seamless experience across various mobile devices. Whether you're planning your
+            day, traveling, or simply curious about the weather, this app makes it easy to stay informed with reliable,
+            real-time data at your fingertips.
+
+            The app showcases the power of Flutter for building responsive mobile apps and demonstrates how API
+            integration can be used to deliver accurate, live data. It’s a practical tool for anyone looking for a
+            quick, convenient way to check the weather anywhere in the world.</p>
+    </section>
+
+    <!-- Project Gallery Section -->
+    <section class="container py-5">
+        <h3 class="text-center mb-4">Project Gallery</h3>
+        <div class="row d-flex justify-content-center align-items-center g-3">
+            <div class="col-8 col-md-5 col-lg-4 my-2 d-flex justify-content-center">
+                <a href="../assets/projects/weather app/weatherApp1.jpg"
+                    data-fancybox="gallery" data-caption="block_diagram">
+                    <img src="../assets/projects/weather app/weatherApp1.jpg"
+                        alt="Project Image" class="img-fluid rounded border border-secondary  p-3">
+                </a>
+            </div>
+            <div class="col-8 col-md-5 col-lg-4 my-2 d-flex justify-content-center">
+                <a href="../assets/projects/weather app/WeatherApp2.jpg" data-fancybox="gallery"
+                    data-caption="pcb_layout_medimover">
+                    <img src="../assets/projects/weather app/WeatherApp2.jpg" alt="Project Image"
+                        class="img-fluid rounded border border-secondary  p-3">
+                </a>
+            </div>
+            <div class="col-8 col-md-5 col-lg-4 my-2 d-flex justify-content-center">
+                <a href="../assets/projects/weather app/WeatherApp3.jpg"
+                    data-fancybox="gallery" data-caption="pill_dispenser_medimover">
+                    <img src="../assets/projects/weather app/WeatherApp3.jpg"
+                        alt="Project Image" class="img-fluid rounded border border-secondary  p-3">
+                </a>
+            </div>
+ 
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center d-flex align-items-center justify-content-center bg-dark text-white">
+        <p>06ajeesh &copy; 2024. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and FancyBox -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@4.0.0/dist/fancybox.umd.js"></script>
+
+    <!--Fancy box initialisation  -->
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            loop: true,
+            captions: true,
+        });
+    </script>
+
+
+</body>
+
+</html>
