@@ -25,12 +25,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
+
 </head>
 
 <body>
   <!-- Nav bar start -->
 
-  <nav class="navbar navbar-expand-md bg-light py-md-4 sticky-top position-sticky">
+  <nav class="navbar navbar-expand-md bg-light py-md-3 position-fixed top-0 w-100">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
         <div class="nav-image rounded-circle border border-grey border-4 d-none d-md-inline-block p-1">
@@ -38,7 +39,7 @@
         </div>
         <span class="display-6 ps-2 dancing-script-regular">Ajeesh</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      <button class="navbar-toggler my-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -56,31 +57,32 @@
   </nav>
 
   <!-- End of nav bar -->
-
+   <br>
+   <br>
   <!-- Home section -->
 
-  <div id="home" class="container d-flex flex-column flex-md-row justify-content-center p-sm-0 ps-3">
-    <div class="d-flex flex-column  justify-content-end">
-      <span class="h1 dancing-script-regular p-0 mt-5 m-0 pt-5">Hi,</span>
-      <span class="h1 dancing-script-regular py-3 m-0">I'm <strong class="display-1 fw-bold">Ajeesh</strong></span>
-      <span class="py-3 w-75">This is my official Portfolio website to showcase my all works
-        related to web development, mobile development and ui design.</span>
-
-      <a class="text-decoration-none py-3 cv-button" href="#" target="_blank" rel="noopener"><span
-          class="p-3 text-white rounded fw-bold m-0 p-0">Resume</span></a>
-    </div>
-
-    <div class="w-md-50 w-100 d-flex justify-content-center align-items-center" id="home-img">
-      <div>
-        <!-- <span class="px-1">Links:</span> -->
-        <a class="btn px-1" href="https://github.com/06ajeesh" target="_blank" title="github" rel="noopener"><i
-            class="bi bi-github"></i></a>
-        <a class="btn px-1" href="https://www.linkedin.com/in/ajeeshp/" target="_blank" title="linkedin"
-          rel="noopener"><i class="bi bi-linkedin"></i></a>
-        <a class="btn px-1" href="https://www.instagram.com/ajeesh06/" target="_blank" title="instagram"
-          rel="noopener"><i class="bi bi-instagram"></i></a>
+  <div id="home" class="container mt-md-5 pt-md-5">
+    <div class="row">
+      <div class="col-md-5 d-flex flex-column justify-content-end pt-5 mt-4" style="min-height: 50vh;">
+        <span class="h1 dancing-script-regular">Hi,</span>
+        <span class="h1 dancing-script-regular py-1">I'm <strong class="display-1 fw-bold">Ajeesh</strong></span>
+        <span class="py-3 w-75">This is my official Portfolio website to showcase my all works
+          related to web development, mobile development and ui design.</span>
+        <button type="button" class="btn cv-button btn-primary py-2" id="resume-button">Resume</button>
       </div>
-      <img src="assets/portfolio_img.png" alt="" class="w-75" />
+  
+      <div class="col-md-7 d-flex justify-content-center align-items-end" id="home-img">
+        <div>
+          <!-- <span class="px-1">Links:</span> -->
+          <a class="btn px-1" href="https://github.com/06ajeesh" target="_blank" title="github" rel="noopener"><i
+              class="bi bi-github"></i></a>
+          <a class="btn px-1" href="https://www.linkedin.com/in/ajeeshp/" target="_blank" title="linkedin"
+            rel="noopener"><i class="bi bi-linkedin"></i></a>
+          <a class="btn px-1" href="https://www.instagram.com/ajeesh06/" target="_blank" title="instagram"
+            rel="noopener"><i class="bi bi-instagram"></i></a>
+        </div>
+        <img src="assets/portfolio_img.png" alt="" class="w-75" />
+      </div>
     </div>
   </div>
 
@@ -88,7 +90,7 @@
 
   <!-- About Section -->
 
-  <div id="about" class="container d-flex flex-column justify-content-lg-center">
+  <div id="about" class="container d-flex flex-column justify-content-lg-center mt-md-5 pt-md-4">
     <div class="underline-head">
       <h2 class="py-2">About</h2>
     </div>
@@ -192,7 +194,7 @@
 
 
   <!-- Resume section -->
-  <div id="resume" class="container d-flex flex-column justify-content-lg-center mb-md-5 pb-md-2">
+  <div id="resume" class="container d-flex flex-column justify-content-lg-center mt-md-5 pt-md-4">
     <div class="underline-head">
       <h2 class="py-2">Resume</h2>
     </div>
@@ -270,7 +272,7 @@
 
 
   <!-- Portfolio section -->
-  <div class="container d-flex flex-column justify-content-lg-center mb-md-5 pb-md-2" id="portfolio">
+  <div class="container d-flex flex-column justify-content-lg-center mt-md-5 pt-md-4" id="portfolio">
     <div class="underline-head">
       <h2 class="py-2">Portfolio</h2>
     </div>
@@ -305,27 +307,33 @@
 
 
       <div class="col-sm-6 col-md-4 col-lg-3 portfolio-item filter-academic">
-        <a href="inner pages/bell system.html"><img src="assets\projects\Automated Bell System\bell_0.jpg" alt="image"></a>
+        <a href="inner pages/bell system.html"><img src="assets\projects\Automated Bell System\bell_0.jpg"
+            alt="image"></a>
       </div>
 
       <div class="col-sm-6 col-md-4 col-lg-3 portfolio-item filter-flutter">
-        <a href="inner pages/basic calculator.html"><img src="assets\projects\calculator\calculator-bg.png" alt="image"></a>
+        <a href="inner pages/basic calculator.html"><img src="assets\projects\calculator\calculator-bg.png"
+            alt="image"></a>
       </div>
 
       <div class="col-sm-6 col-md-4 col-lg-3 portfolio-item filter-flutter">
-        <a href="inner pages/multi store app.html"><img src="assets\projects\multi-store-app-imgs\multi_store_1.png" alt="image"></a>
+        <a href="inner pages/multi store app.html"><img src="assets\projects\multi-store-app-imgs\multi_store_1.png"
+            alt="image"></a>
       </div>
 
       <div class="col-sm-6 col-md-4 col-lg-3 portfolio-item filter-web">
-        <a href="inner pages/weather website.html"><img src="assets\projects\weather website\weather-bg.png" alt="image"></a>
+        <a href="inner pages/weather website.html"><img src="assets\projects\weather website\weather-bg.png"
+            alt="image"></a>
       </div>
 
       <div class="col-sm-6 col-md-4 col-lg-3 portfolio-item filter-flutter">
-        <a href="inner pages/weather app.html"><img src="assets\projects\weather app\weather app bg.png" alt="image"></a>
+        <a href="inner pages/weather app.html"><img src="assets\projects\weather app\weather app bg.png"
+            alt="image"></a>
       </div>
 
       <div class="col-sm-6 col-md-4 col-lg-3 portfolio-item filter-python filter-web">
-        <a href="inner pages/rise hospital django.html"><img src="assets/projects/Rise hospital/cover_image.png" alt="image"></a>
+        <a href="inner pages/rise hospital django.html"><img src="assets/projects/Rise hospital/cover_image.png"
+            alt="image"></a>
       </div>
     </div>
   </div>
@@ -338,7 +346,7 @@
 
   <!-- Contace section -->
 
-  <div id="contact" class="container d-flex flex-column justify-content-lg-center mb-md-5 pb-md-2">
+  <div id="contact" class="container d-flex flex-column justify-content-lg-center mt-md-5 pt-md-4">
     <div class="underline-head">
       <h2 class="py-2">Contact</h2>
     </div>
@@ -346,12 +354,11 @@
       solutions and
       impactful projects.</p>
     <div class="row d-flex flex-row w-100">
-      <div class="col-md-6 col-lg-5">
 
+      <div class="col-md-6 col-lg-5">
         <div class="card card-body">
-          <div class="py-3"></div>
           <div class="card-text mb-3 contact-card-item">
-            <div class="row">
+            <div class="row pt-1">
               <div class="col-3 d-flex justify-content-center align-items-center">
                 <i class="bi bi-geo-alt-fill fs-5 rounded-circle btn" aria-label="Location icon"></i>
               </div>
@@ -396,7 +403,7 @@
 
       </div>
       <div class="col-md-6 col-lg-7">
-        <div class="card card-body m-2">
+        <div class="card card-body">
           <div class="py-3"></div>
           <div class="card-title underline-head">
             <h2 class="contact-form-header h3 py-2">Get in touch</h2>
@@ -444,7 +451,8 @@
 
 
   <!-- Footer section -->
-  <footer id="footer" class="footer h-25 text-center d-flex align-items-center justify-content-center bg-dark text-white">
+  <footer id="footer"
+    class="footer h-25 text-center d-flex align-items-center justify-content-center bg-dark text-white">
     <p>06ajeesh &copy; 2024. All Rights Reserved.</p>
   </footer>
   <!-- End of footer section -->

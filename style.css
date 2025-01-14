@@ -68,39 +68,44 @@ nav .nav-image {
     background-size: contain;
 }
 
+nav{
+    z-index: 10;
+  }
+
 
 
 /* home */
 
 #home {
-    min-height: 80vh;
     align-items: end;
     margin-bottom: 5%;
+    /* border: 2px solid black; */
 }
 
 
-.cv-button span {
+.cv-button{
+    width: 150px;
     background-color: black;
     transition: background-color 0.3s ease;
 }
 
-.cv-button span:hover {
+.cv-button:hover {
     background-color: #0d6efd;
 }
 
 
-#home-img {
-    background-image: url(assets/portfolio_bg_img.png);
+/* #home-img {
+    background-image: url('https://img.freepik.com/free-vector/abstract-background-with-modern-techno-design_1048-5494.jpg?semt=ais_hybrid');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 50%;
     position: relative;
-}
+} */
 
 #home-img img {
     z-index: 1;
-    position: relative;
+    /* position: relative; */
 }
 
 #home-img div{
@@ -144,7 +149,6 @@ nav .nav-image {
 
 #about {
     position: relative;
-    min-height: 100vh;
 }
 
 #about h2 {
@@ -242,7 +246,6 @@ nav .nav-image {
 
 #resume{
     position: relative;
-    min-height: 100vh;
 }
 
 #resume h2 {
