@@ -94,37 +94,26 @@ nav{
 }
 
 
-/* #home-img {
+#home-img {
+    position: relative;
     background-image: url('https://img.freepik.com/free-vector/abstract-background-with-modern-techno-design_1048-5494.jpg?semt=ais_hybrid');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50%;
-    position: relative;
-} */
+    border-radius: 20px; /* Add rounded edges */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Gentle shadow for depth */
+    overflow: hidden; /* Make sure the overflow is hidden */
+}
 
 #home-img img {
+    position: relative;
     z-index: 1;
-    /* position: relative; */
 }
 
-#home-img div{
-    display: none; 
-    position: absolute; 
-    top: -20px; 
-    right: 5px; 
-    z-index: 10;
-    background-color: rgba(255, 255, 255, 0.8); 
-    padding: 5px; 
-    border-radius: 5px; 
-}
-
-#home-img:hover div{
-    display: block; 
-} 
 
 
-#home-img div a[title="github"] i{
+
+/* #home-img div a[title="github"] i{
     color: #000000;
     font-size: 3rem;
 }
@@ -141,7 +130,7 @@ nav{
 
 #home-img div a i:hover{
     cursor: pointer;
-}
+} */
 
 
 
