@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Django Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@4.0.0/dist/fancybox.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="../assets/favicon_io/site.webmanifest" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon_io/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/favicon_io/android-chrome-512x512.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            min-height: 100vh;
+        }
+
+        footer {
+            height: 20vh;
+        }
+
+        em {
+            font-weight: 600;
+        }
+
+        .skills {
+            background-color: #f8f9fa;
+            padding: 30px 0;
+        }
+
+        .project-description {
+            margin-bottom: 30px;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            border-radius: 25px;
+            padding: 10px 20px;
+        }
+
+        .just {
+            text-align: justify;
+            text-indent: 2rem;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="py-1"></div>
+    <!-- Hero Section -->
+    <section class="container">
+        <div class="row my-2 py-2 d-flex justify-content-center">
+            <div class="col-10 col-sm-7 col-md-5 d-flex justify-content-center align-items-center mb-3">
+                <img src="../assets/projects/django-blog-project/cover_img.png" alt="img" class="w-100 rounded-5" />
+            </div>
+
+            <div class="col-md-7 d-flex flex-column align-items-center justify-content-center h-auto">
+                <h1 class="fw-bold mb-2 pb-2 d-flex text-justify h2">
+                    Django Blog Project
+                </h1>
+
+                <div class="d-flex justify-content-center mt-2 pt-2 w-75">
+                    <table
+                        class="table table-borderless table-striped-columns table-hover caption-top table-responsive-md">
+                        <caption>
+                            Project info
+                        </caption>
+                        <tr>
+                            <th>Date</th>
+                            <td class="">01 January, 2025</td>
+                        </tr>
+
+                        <tr>
+                            <th>Project type</th>
+                            <td>Personal</td>
+                        </tr>
+
+                        <tr>
+                            <th>Language</th>
+                            <td>
+                                <div class="d-flex flex-column">
+                                    <span>Django - Python</span>
+                                    <span>Bootstrap</span>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="table-active">
+                            <th>Project URL</th>
+                            <td>
+                                <div class="d-flex flex-column">
+                                    <a href="https://github.com/06ajeesh/django-blog-project" target="_blank"
+                                        rel="noopener" class="link-primary text-decoration-none">
+                                        GitHub Repository
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br />
+
+    <!-- Project Description Section -->
+    <section class="container project-description pt-3">
+        <h3 class="text-start mb-4">Project Description :</h3>
+        <p class="just p-0 m-0">
+            A feature-rich blogging platform built with Django, allowing users to
+            write, read, and manage blogs efficiently. The application provides
+            role-based functionality for Writers and Readers, ensuring a seamless
+            blogging experience.
+        </p>
+    </section>
+
+    <!-- Project Gallery Section -->
+    <section class="container py-5">
+        <h3 class="text-center mb-4">Project Gallery</h3>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-9 col-lg-6 my-2">
+                <a href="../assets/projects/django-blog-project/welcome.png" data-fancybox="gallery"
+                    data-caption="welcome">
+                    <img src="../assets/projects/django-blog-project/welcome.png" alt="Project Image"
+                        class="img-fluid border border-dark border-dark p-3" />
+                </a>
+            </div>
+            <div class="col-md-9 col-lg-6 my-2">
+                <a href="../assets/projects/django-blog-project/login.png" data-fancybox="gallery" data-caption="login">
+                    <img src="../assets/projects/django-blog-project/login.png" alt="Project Image"
+                        class="img-fluid border border-dark p-3" />
+                </a>
+            </div>
+
+            <div class="col-md-9 col-lg-6 my-2">
+                <a href="../assets/projects/django-blog-project/register.png" data-fancybox="gallery"
+                    data-caption="register">
+                    <img src="../assets/projects/django-blog-project/register.png" alt="Project Image"
+                        class="img-fluid border border-dark p-3" />
+                </a>
+            </div>
+            <div class="col-md-9 col-lg-6 my-2">
+                <a href="../assets/projects/django-blog-project/reader_home.png" data-fancybox="gallery"
+                    data-caption="reader home">
+                    <img src="../assets/projects/django-blog-project/reader_home.png" alt="Project Image"
+                        class="img-fluid border border-dark p-3" />
+                </a>
+            </div>
+
+            <div class="col-md-9 col-lg-6 my-2">
+                <a href="../assets/projects/django-blog-project/reader_detailed.png" data-fancybox="gallery"
+                    data-caption="blog detailed">
+                    <img src="../assets/projects/django-blog-project/reader_detailed.png" alt="Project Image"
+                        class="img-fluid border border-dark p-3" />
+                </a>
+            </div>
+            <div class="col-md-9 col-lg-6 my-2">
+                <a href="../assets/projects/django-blog-project/writer_home.png" data-fancybox="gallery"
+                    data-caption="writer home">
+                    <img src="../assets/projects/django-blog-project/writer_home.png" alt="Project Image"
+                        class="img-fluid border border-dark p-3" />
+                </a>
+            </div>
+
+            <div class="col-md-9 col-lg-6 my-2">
+                <a href="../assets/projects/django-blog-project/writer_update.png" data-fancybox="gallery"
+                    data-caption="blog update">
+                    <img src="../assets/projects/django-blog-project/writer_update.png" alt="Project Image"
+                        class="img-fluid border border-dark p-3" />
+                </a>
+            </div>
+            <div class="col-md-9 col-lg-6 my-2">
+                <a href="../assets/projects/django-blog-project/account.png" data-fancybox="gallery"
+                    data-caption="Account">
+                    <img src="../assets/projects/django-blog-project/account.png" alt="Project Image"
+                        class="img-fluid border border-dark p-3" />
+                </a>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+    <!-- Skills and Tools Section -->
+    <section class="details">
+        <div class="container">
+            <h2 class="text-start mb-4">Details :</h2>
+            <p class="just p-0 m-0">
+                The Django Blog Application is a powerful, role-based blogging
+                platform designed to provide users with a seamless experience for
+                writing, reading, and managing blogs. Built with Django for backend
+                functionality and Bootstrap for a clean and responsive user interface,
+                this project ensures an intuitive and engaging blogging experience for
+                both Writers and Readers. The application follows a structured user
+                role system, allowing users to register as <em>Writers</em> or
+                <em>Readers</em> (default: Reader). Writers can create, update, and
+                manage their blog posts, while Readers can browse blogs, view details,
+                and engage through comments. The platform offers a simple yet
+                efficient dashboard for Writers, where they can quickly access their
+                published blogs and manage content effortlessly. The homepage of the
+                application presents blog posts in a <em>card layout</em>, displaying
+                <em>blog images</em>, <em>titles</em>, and a short preview of the content.
+                Readers can click on any post to view the full blog with detailed
+                content and comments. This dynamic approach keeps the interface
+                engaging and user-friendly. Each blog post also supports
+                <em>optional images</em> and <em>custom slugs</em>, allowing Writers
+                to personalize their content.
+            </p>
+            <p class="just">
+                The blogging system is structured to make content creation and
+                management smooth and efficient. Writers can easily create new blog
+                posts by filling out a
+                <em>blog title, content, optional image, and slug field</em>. Once
+                submitted, the blog appears in their <em>dashboard</em>, where they
+                can update or delete it if necessary. The <em>slug system</em> enables
+                custom URLs for better readability and SEO. Readers, on the other
+                hand, enjoy a user-friendly blog browsing experience. The homepage
+                features all blog entries with <em>thumbnail previews</em>, allowing
+                users to <em>click on posts to read full content</em>. The
+                <em>comment section</em> enables interaction, where readers can
+                express their opinions, ask questions, and engage with the blogging
+                community. User authentication is secured with
+                <em>Django’s built-in authentication system</em>, allowing users to
+                register, log in, and manage their accounts safely. The
+                <em>Account Section</em> lets users update their profile details,
+                change their role if needed, and delete their account if they choose
+                to leave the platform. The Django Blog Application is designed to be
+                <em>responsive</em>, ensuring a seamless experience across all
+                devices, including <em>desktops, tablets, and mobile phones</em>. The
+                use of Bootstrap makes the UI visually appealing while maintaining
+                efficiency in navigation and user interactions.
+            </p>
+            <h6 class="h5 pt-2">Key Technologies of project include :</h6>
+            <ul>
+                <li>Backend: Django (Python Framework)</li>
+                <li>Frontend: HTML, CSS, Bootstrap</li>
+                <li>Database: SQLite </li>
+                <li>Authentication: Django Authentication System</li>
+                <li>
+                    Other Libraries: Django Messages Framework, Python-dotenv (for
+                    environment security)
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center d-flex align-items-center justify-content-center bg-dark text-white">
+        <p>06ajeesh &copy; 2024. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and FancyBox -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@4.0.0/dist/fancybox.umd.js"></script>
+
+    <!--Fancy box initialisation  -->
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            loop: true,
+            captions: true,
+        });
+    </script>
+</body>
+
+</html>
