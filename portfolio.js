@@ -3,13 +3,30 @@ document.addEventListener('DOMContentLoaded', function () {
     new PureCounter();  // Initialize PureCounter after the DOM is ready
 });
 
+
+
+// Select the scroll button
+const scrollButton = document.querySelector(".scroll-top");
+
 // Scroll to top functionality
-document.querySelector(".scroll-top").addEventListener("click", () => {
+scrollButton.addEventListener("click", () => {
     window.scrollTo({
         top: 0,
         behavior: "smooth",
     });
 });
+
+// Function to show/hide button based on scroll position
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+        scrollButton.style.opacity = "1";  // Show button
+        scrollButton.style.visibility = "visible";
+    } else {
+        scrollButton.style.opacity = "0";  // Hide button
+        scrollButton.style.visibility = "hidden";
+    }
+});
+
 
 // Utility function to select elements
 const select = (el, all = false) => {
