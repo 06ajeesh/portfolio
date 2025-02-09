@@ -315,7 +315,6 @@ nav{
 
 #portfolio{
     position: relative;
-    min-height: 100vh;
 }
 
 #portfolio .portfolio-titles{
@@ -403,7 +402,7 @@ nav{
 
 #contact{
     position: relative;
-    min-height: 100vh;    
+    margin-bottom: 10px;
 }
 
 #contact .card .contact-card-item{
