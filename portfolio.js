@@ -3,30 +3,43 @@ document.addEventListener('DOMContentLoaded', function () {
     new PureCounter();  // Initialize PureCounter after the DOM is ready
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    AOS.init();
+});
 
-
-// Select the scroll button
+// Scroll to Top Button
 const scrollButton = document.querySelector(".scroll-top");
 
-// Scroll to top functionality
-scrollButton.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth",
+if (scrollButton) {
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+            scrollButton.style.opacity = "1";
+            scrollButton.style.visibility = "visible";
+        } else {
+            scrollButton.style.opacity = "0";
+            scrollButton.style.visibility = "hidden";
+        }
     });
-});
 
-// Function to show/hide button based on scroll position
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-        scrollButton.style.opacity = "1";  // Show button
-        scrollButton.style.visibility = "visible";
-    } else {
-        scrollButton.style.opacity = "0";  // Hide button
-        scrollButton.style.visibility = "hidden";
-    }
-});
+    scrollButton.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    });
+}
 
+// Navbar Scroll Effect
+// const navbar = document.querySelector(".navbar");
+// if (navbar) {
+//     window.addEventListener("scroll", () => {
+//         if (window.scrollY > 100) {
+//             navbar.classList.add("scrolled");
+//         } else {
+//             navbar.classList.remove("scrolled");
+//         }
+//     });
+// }
 
 // Utility function to select elements
 const select = (el, all = false) => {
@@ -51,7 +64,8 @@ window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
         let portfolioIsotope = new Isotope(portfolioContainer, {
-            itemSelector: '.portfolio-item'
+            itemSelector: '.portfolio-item',
+            layoutMode: 'fitRows' // Optional: Use 'fitRows' or 'masonry' based on your design
         });
 
         let portfolioFilters = select('#portfolio-flters li', true);
@@ -75,18 +89,14 @@ window.addEventListener('load', () => {
                 filter: filterValue
             });
 
-            // Refresh AOS after filtering items
-            portfolioIsotope.on('arrangeComplete', function () {
-                console.log("Isotope arrangement complete!");
-                AOS.refresh();  // If you are using AOS (Animate on Scroll)
-            });
+            // Refresh AOS after filtering items (if AOS is used)
+            if (typeof AOS !== 'undefined') {
+                AOS.refresh();
+            }
         }, true);
     }
 });
 
-
-//
-//
 // Initialize portfolio lightbox (if you're using GLightbox)
 const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'

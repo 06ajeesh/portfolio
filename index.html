@@ -44,27 +44,26 @@
 <body>
   <!-- Nav bar start -->
 
-  <nav class="navbar navbar-expand-md bg-light py-md-3 position-sticky top-0 w-100">
+  <nav class="navbar navbar-expand-md navbar-light bg-transparent py-5 shadow-sm px-3 px-sm-2 px-md-1 px-0">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <div class="nav-image rounded-circle border border-grey border-4 d-none d-md-inline-block p-1">
-          <img src="assets/portfolio_img.png" alt="profile image" width="100%" class="rounded-circle img-fluid" />
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <div class="nav-image rounded-circle border border-2 border-primary p-1 me-2">
+          <img src="assets/portfolio_img.png" alt="Ajeesh" class="rounded-circle img-fluid" width="50" height="50" />
         </div>
-        <span class="display-6 ps-2 dancing-script-regular">Ajeesh</span>
+        <span class="display-6 dancing-script-regular">Ajeesh</span>
       </a>
-      <button class="navbar-toggler my-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-sm-2">
-          <a class="nav-link me-lg-4 me-sm-2 me-md-3 me-xl-5 fw-bold text-uppercase d-md-none d-lg-block"
-            aria-current="page" href="#home">Home</a>
-          <a class="nav-link me-lg-5 fw-bold text-uppercase" href="#about">About</a>
-          <a class="nav-link me-lg-5 fw-bold text-uppercase" href="#resume">Resume</a>
-          <a class="nav-link me-lg-5 fw-bold text-uppercase" href="#portfolio">PORTFOLIO</a>
-          <a class="nav-link me-lg-5 fw-bold text-uppercase" href="#contact">Contact</a>
-        </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="border-0 me-1 nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="border-0 me-1 border-bottom nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="border-0 me-1  nav-link" href="#resume">Resume</a></li>
+          <li class="nav-item"><a class="border-0 me-1 border-bottom nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="border-0 me-1 nav-link" href="#contact">Contact</a></li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -73,38 +72,40 @@
 
 
   <!-- Home section -->
-  <div id="home" class="container mt-5 pt-5 ps-3">
-    <div class="row justify-content-md-between align-items-center">
-
-      <div class="col-10 col-sm-8 col-md-4 col-lg-5 d-flex flex-column justify-content-end">
-        <span class="h1 dancing-script-regular">Hi,</span>
-        <span class="h1 dancing-script-regular py-1">I'm <strong class="display-1 fw-bold">Ajeesh</strong></span>
-        <span class="py-3 w-lg-75">This is my official Portfolio website to showcase my all works
-          related to web development, mobile development and ui design.</span>
-        <button type="button" class="btn cv-button btn-primary py-2" id="resume-button">Resume</button>
+  <section id="home" class="min-vh-100 d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="display-4 fw-bold">Hi, I'm <span class="text-primary">Ajeesh</span></h1>
+          <p class="lead">Web Developer | Flutter Enthusiast | Django Expert</p>
+          <p>Welcome to my portfolio! I'm passionate about building innovative solutions and creating seamless user
+            experiences.</p>
+          <a href="#portfolio" class="btn btn-primary btn-lg me-3">View My Work</a>
+          <a href="#contact" class="btn btn-outline-secondary btn-lg">Contact Me</a>
+          <div class="mt-4">
+            <a href="https://github.com/06ajeesh" target="_blank" rel="noopener"
+              class="btn btn-light  me-2 mt-2 mt-lg-0 social-btn" title="GitHub"><i class="bi bi-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/ajeeshp/" target="_blank" rel="noopener"
+              class="btn btn-light  me-2 mt-2 mt-lg-0 social-btn" title="LinkedIn"><i class="bi bi-linkedin"></i>
+              LinkedIn</a>
+            <a href="https://www.instagram.com/ajeesh06/" target="_blank" rel="noopener"
+              class="btn btn-light  mt-2 mt-lg-0 social-btn" title="Instagram"><i class="bi bi-instagram"></i>
+              Instagram</a>
+          </div>
+        </div>
+        <div class="col-md-6 text-center pt-5 pt-md-0">
+          <img src="assets/portfolio_img.png" alt="Ajeesh" class="img-fluid rounded-circle shadow-lg" width="300"
+            height="300" />
+        </div>
       </div>
-
-      <!-- <div>
-          <a class="btn px-1" href="https://github.com/06ajeesh" target="_blank" title="github" rel="noopener"><i
-              class="bi bi-github"></i></a>
-          <a class="btn px-1" href="https://www.linkedin.com/in/ajeeshp/" target="_blank" title="linkedin"
-            rel="noopener"><i class="bi bi-linkedin"></i></a>
-          <a class="btn px-1" href="https://www.instagram.com/ajeesh06/" target="_blank" title="instagram"
-            rel="noopener"><i class="bi bi-instagram"></i></a>
-        </div> -->
-
-      <div class="col-11 col-sm-5 col-md-7 col-lg-6 col-xl-5 mt-4 mt-lg-0 d-flex d-md-block justify-content-center" id="home-img">
-        <img src="assets/portfolio_img.png" alt="" class="" />
-      </div>
-
     </div>
-  </div>
+  </section>
 
   <!-- End of home section -->
 
   <!-- About Section -->
 
-  <div id="about" class="container d-flex flex-column justify-content-lg-center mt-md-5 pt-md-4">
+  <div id="about" class="container d-flex flex-column justify-content-lg-center mt-5 pt-4">
     <div class="underline-head">
       <h2 class="py-2">About</h2>
     </div>
@@ -189,11 +190,11 @@
             data-aos-delay="100">
             <div class="count-box">
               <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1"
+              <span data-purecounter-start="0" data-purecounter-end="11" data-purecounter-duration="1"
                 class="purecounter"></span>
               <p>
                 Projects including both <strong>personal</strong> and
-                <strong>academic</strong>
+                <strong>academic</strong>border border-end 
               </p>
             </div>
           </div>
@@ -208,7 +209,7 @@
 
 
   <!-- Resume section -->
-  <div id="resume" class="container d-flex flex-column justify-content-lg-center mt-md-5 pt-md-4">
+  <div id="resume" class="container d-flex flex-column justify-content-lg-center mt-5 pt-md-4">
     <div class="underline-head">
       <h2 class="py-2">Resume</h2>
     </div>
@@ -351,8 +352,8 @@
       </div>
 
       <div class="col-sm-6 col-md-4 col-lg-3 portfolio-item filter-python filter-web">
-        <a href="inner pages/django-ecommerce-project.html"><img src="assets/projects/django-ecommerce-project/cover_img.jpg"
-            alt="image"></a>
+        <a href="inner pages/django-ecommerce-project.html"><img
+            src="assets/projects/django-ecommerce-project/cover_img.jpg" alt="image"></a>
       </div>
 
       <div class="col-sm-6 col-md-4 col-lg-3 portfolio-item filter-python filter-web">
@@ -427,11 +428,11 @@
 
 
       </div>
-      <div class="col-md-6 col-lg-7">
+      <div class="col-md-6 col-lg-7 my-3 my-md-0">
         <div class="card card-body">
           <div class="py-3"></div>
           <div class="card-title underline-head">
-            <h2 class="contact-form-header h3 py-2">Get in touch</h2>
+            <h2 class="contact-form-header h3 py-2 text-lg-start text-center">Get in touch</h2>
           </div>
           <div class="form-elements-div">
             <div class="py-3">
@@ -477,7 +478,7 @@
 
   <!-- Footer section -->
   <footer id="footer"
-    class="footer h-25 text-center d-flex align-items-center justify-content-center bg-dark text-white">
+    class="footer text-center d-flex align-items-center justify-content-center bg-dark text-white p-5">
     <p>06ajeesh &copy; 2024. All Rights Reserved.</p>
   </footer>
   <!-- End of footer section -->
